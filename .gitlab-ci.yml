@@ -1,0 +1,1 @@
+include: 'https://gitlab.banner.wtf/public-projects/gitlab-ci-yaml/raw/master/pipelines/.containphp-container.yml'
