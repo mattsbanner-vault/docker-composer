@@ -3,10 +3,6 @@ FROM ubuntu:18.04
 LABEL maintainer = "Matt Banner <matt@banner.wtf>"
 
 ENV DEBIAN_FRONTEND noninteractive
-
-#ARG PHP_VERSION
-#ARG COMPOSER_VERSION
-
 ENV PHP_VERSION 7.3
 ENV COMPOSER_VERSION 1.9.1
 
