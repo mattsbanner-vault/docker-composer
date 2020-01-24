@@ -12,12 +12,12 @@ There's no need for the `composer` prefix as that's where the container starts.
 
 **Composer Install**
 ```sh
-$ docker run --rm -it -v $PWD:/app containphp/composer:latest install
+$ docker run --rm -it -v $PWD:/app mattbanner/composer:latest install
 ```
 
 **Composer Update**
 ```sh
-$ docker run --rm -it -v $PWD:/app containphp/composer:latest update
+$ docker run --rm -it -v $PWD:/app mattbanner/composer:latest update
 ```
 You get the gist, change the last word for any composer command you wish to run.
 
@@ -25,5 +25,5 @@ You get the gist, change the last word for any composer command you wish to run.
 That's a pretty lengthy command to have to type every time you need to update some packages. Therefore I have this aliased to the command `composer` on my machine. I've actually uninstalled Composer locally; yet I can still run `composer install` just like anyone else.
 
 ```
-alias composer='docker run --rm -it -v $PWD:/app containphp/composer:latest'
+alias composer='docker run --rm -it -v $PWD:/app mattbanner/composer:latest'
 ```
