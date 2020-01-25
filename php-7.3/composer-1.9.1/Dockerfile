@@ -34,6 +34,7 @@ RUN \
         php${PHP_VERSION}-sqlite3 \
         php${PHP_VERSION}-bcmath \
         php${PHP_VERSION}-soap \
+        php${PHP_VERSION}-gd \
         psmisc \
         tzdata && \
     php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer --version=${COMPOSER_VERSION} && \
