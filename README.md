@@ -3,7 +3,7 @@
 
 I like to run everything I can within Docker, that way when I'm switching between Mac & Linux, I have exactly the same environment. That's why I've built this repository and the subsequent images on [DockerHub](https://hub.docker.com/r/mattbanner/composer/tags).
 
-## Executing NPM
+## Executing Composer
 To execute Composer within Docker, you first need to decide on a Docker image [tag](https://hub.docker.com/r/mattbanner/composer/tags) to use. They're all named appropriately depending on which versions of PHP and Composer they contain.
 
 There's no need for the `composer` prefix as that's where the container starts. 
