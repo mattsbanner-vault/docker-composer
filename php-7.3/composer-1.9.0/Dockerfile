@@ -12,6 +12,7 @@ RUN \
     add-apt-repository ppa:ondrej/php && \
     apt-get install -y \
         php${PHP_VERSION}-fpm \
+        git \
         libargon2-0 \
         libedit2 \
         libpcre2-8-0 \
