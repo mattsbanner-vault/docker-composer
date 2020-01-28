@@ -11,12 +11,12 @@ There's no need for the `composer` prefix as that's where the container starts.
 ## Executing
 
 ```shell script
-$ docker run --rm -it -v $PWD:/app mattbanner/composer:7.3-1.9.1 install
+$ docker run --rm -it -v $PWD:/app -v ~/.composer:/root/.composer mattbanner/composer:7.3-1.9.1 install
 ```
 
 ## Alias It!
 That's a pretty lengthy command to have to type every time you need to install some packages. Therefore I have this aliased to the command `composer` on my machine. I've actually uninstalled Composer locally; yet I can still run `composer install` just like anyone else.
 
 ```
-alias npm='docker run --rm -it -v $PWD:/app mattbanner/composer:7.3-1.9.1 install'
+alias composer='docker run --rm -it -v $PWD:/app -v ~/.composer:/root/.composer mattbanner/composer:7.3-1.9.1 install'
 ```
