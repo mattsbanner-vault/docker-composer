@@ -39,12 +39,15 @@ RUN \
         tzdata && \
     php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer --version=${COMPOSER_VERSION} && \
     composer global require hirak/prestissimo && \
+    useradd user && \
     apt-get remove -y software-properties-common && \
     apt-get autoremove -y && \
     rm -rf /var/lib/apt/lists/* /var/cache/apt/*
 
 VOLUME ["/app"]
 WORKDIR /app
+
+USER user
 
 CMD ["-"]
 ENTRYPOINT ["composer", "--ansi"]
