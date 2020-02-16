@@ -18,5 +18,5 @@ $ docker run --rm -it -v $PWD:/app -v ~/.composer:/home/user/.composer --name co
 That's a pretty lengthy command to have to type every time you need to install some packages. Therefore I have this aliased to the command `composer` on my machine. I've actually uninstalled Composer locally; yet I can still run `composer install` just like anyone else.
 
 ```
-alias composer='docker run --rm -it -v $PWD:/app -v ~/.composer:/home/user/.composer --name composer mattbanner/composer:7.3-1.9.1 install'
+alias composer='docker run --rm -it -v $PWD:/app -v ~/.composer:/home/user/.composer --name composer mattbanner/composer:7.3-1.9.1'
 ```
