@@ -12,6 +12,7 @@ RUN \
     add-apt-repository ppa:ondrej/php && \
     apt-get install -y \
         php${PHP_VERSION}-fpm \
+        git \
         libargon2-0 \
         libedit2 \
         libpcre2-8-0 \
@@ -36,7 +37,8 @@ RUN \
         php${PHP_VERSION}-soap \
         php${PHP_VERSION}-gd \
         psmisc \
-        tzdata && \
+        tzdata \
+        unzip && \
     php -r "readfile('https://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer --version=${COMPOSER_VERSION} && \
     composer global require hirak/prestissimo && \
     useradd user && \
